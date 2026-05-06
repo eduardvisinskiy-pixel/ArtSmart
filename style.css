@@ -447,8 +447,8 @@ textarea:focus {
 }
 
 .logo-image {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
   border-radius: 50%;
   background: var(--white);
