@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://artsmart-aalborg.dk/sitemap.xml
