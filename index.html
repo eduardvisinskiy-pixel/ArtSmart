@@ -79,35 +79,48 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="#home" class="logo" aria-label="ART SMART Aalborg">
-        <img src="logo.png" alt="ART SMART Aalborg Logo" class="logo-image" />
-          ART SMART
-          <small>Aalborg</small>
-        </span>
+<header class="header">
+  <div class="container header-inner">
+    <a href="#home" class="logo" aria-label="ART SMART Aalborg">
+      <img src="logo.png" alt="ART SMART Aalborg Logo" class="logo-image" />
+
+      <span>
+        ART SMART
+        <small>Aalborg</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#about" data-i18n="navAbout">Про нас</a>
+      <a href="#services" data-i18n="navServices">Заняття</a>
+      <a href="#news" data-i18n="navNews">Новини</a>
+      <a href="#contact" data-i18n="navContact">Контакти</a>
+    </nav>
+
+    <div class="header-actions">
+      <button
+        class="gallery-btn"
+        id="galleryBtn"
+        type="button"
+        data-i18n="galleryButton"
+      >
+        Галерея
+      </button>
+
+      <button class="lang-btn" id="langBtn" type="button">EN</button>
+
+      <a href="#contact" class="btn btn-small" data-i18n="navButton">
+        Записатися
       </a>
 
-      <nav class="nav" id="nav">
-        <a href="#about" data-i18n="navAbout">Про нас</a>
-        <a href="#services" data-i18n="navServices">Заняття</a>
-        <a href="#reviews" data-i18n="navReviews">Відгуки</a>
-        <a href="#news" data-i18n="navNews">Новини</a>
-        <a href="#contact" data-i18n="navContact">Контакти</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="lang-btn" id="langBtn" type="button">EN</button>
-        <a href="#contact" class="btn btn-small" data-i18n="navButton">Записатися</a>
-
-        <button class="burger" id="burger" type="button" aria-label="Open menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+      <button class="burger" id="burger" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
 
   <main id="home">
     <section class="hero">
@@ -321,5 +334,21 @@
   <footer class="footer">
     <p>© 2026 ART SMART Aalborg. All rights reserved.</p>
   </footer>
+  <div class="gallery-modal" id="galleryModal">
+  <div class="gallery-modal-content">
+    <button class="gallery-close" id="galleryClose" type="button">×</button>
+
+    <h2 data-i18n="galleryTitle">Галерея</h2>
+
+    <div class="gallery-grid">
+      <img src="gallery-1.jpg" alt="ART SMART Aalborg creative class" />
+      <img src="gallery-2.jpg" alt="Children art workshop in Aalborg" />
+      <img src="gallery-3.jpg" alt="Creative activities for kids Aalborg" />
+      <img src="gallery-4.jpg" alt="ART SMART kids painting class" />
+      <img src="gallery-5.jpg" alt="Art therapy for children Aalborg" />
+      <img src="gallery-6.jpg" alt="Creative studio for children Aalborg" />
+    </div>
+  </div>
+</div>
 </body>
 </html>
