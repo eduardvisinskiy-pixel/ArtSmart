@@ -3,6 +3,9 @@ const nav = document.getElementById("nav");
 const langBtn = document.getElementById("langBtn");
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
+const galleryBtn = document.getElementById("galleryBtn");
+const galleryModal = document.getElementById("galleryModal");
+const galleryClose = document.getElementById("galleryClose");
 
 const translations = {
   uk: {
@@ -16,6 +19,8 @@ const translations = {
     navNews: "Новини",
     navContact: "Контакти",
     navButton: "Записатися",
+    galleryButton: "Галерея",
+galleryTitle: "Галерея",
 
     heroBadge: "Creative Studio in Aalborg",
     heroTitle: "Творча студія для дітей в Ольборзі",
@@ -73,6 +78,8 @@ reviewTextThree:
       "ART SMART Aalborg is a creative studio for children in Aalborg with art therapy, creative classes, workshops and child development.",
 
     navAbout: "About",
+    galleryButton: "Gallery",
+galleryTitle: "Gallery",
     navServices: "Classes",
     navReviews: "Reviews",
     navNews: "News",
@@ -224,3 +231,22 @@ contactForm.addEventListener("submit", async (event) => {
 });
 
 setLanguage(currentLang);
+galleryBtn.addEventListener("click", () => {
+  galleryModal.classList.add("active");
+});
+
+galleryClose.addEventListener("click", () => {
+  galleryModal.classList.remove("active");
+});
+
+galleryModal.addEventListener("click", (event) => {
+  if (event.target === galleryModal) {
+    galleryModal.classList.remove("active");
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    galleryModal.classList.remove("active");
+  }
+});
