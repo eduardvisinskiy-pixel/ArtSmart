@@ -66,6 +66,7 @@ reviewTextThree:
       "Напишіть нам, і ми відповімо щодо розкладу, цін та пробного заняття.",
 
     namePlaceholder: "Ваше ім’я",
+    gallerySubtitle: "Більше фото та відео шукайте в наших соцмережах.",
     emailPlaceholder: "Email",
     messagePlaceholder: "Ваше повідомлення",
     formButton: "Надіслати",
@@ -85,6 +86,7 @@ galleryTitle: "Gallery",
     navNews: "News",
     navContact: "Contact",
     navButton: "Book now",
+    gallerySubtitle: "Find more photos and videos on our social media.",
 
     heroBadge: "Creative Studio in Aalborg",
     heroTitle: "Creative studio for children in Aalborg",
