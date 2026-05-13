@@ -433,15 +433,6 @@ textarea:focus {
 }
 
 /* Footer */
-.gallery-grid video {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 9 / 16;
-  object-fit: contain;
-  border-radius: 22px;
-  box-shadow: var(--shadow);
-  background: #000;
-}
 
 .footer {
   padding: 26px 16px;
@@ -690,6 +681,22 @@ textarea:focus {
   .gallery-btn {
     padding: 9px 12px;
     font-size: 0.9rem;
+  }
+}
+.gallery-grid video {
+  width: 100%;
+  max-width: 360px;
+  height: 640px;
+  object-fit: contain;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  background: #000;
+  margin: 0 auto;
+}
+@media (max-width: 520px) {
+  .gallery-grid video {
+    max-width: 100%;
+    height: auto;
   }
 }
 
