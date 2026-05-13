@@ -685,8 +685,9 @@ textarea:focus {
 }
 .gallery-grid video {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
   border-radius: 22px;
   box-shadow: var(--shadow);
   background: #000;
